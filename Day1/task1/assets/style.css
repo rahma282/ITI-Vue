@@ -1,0 +1,152 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.list-group {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.list-group-item {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #292929;
+    transform: scale(1.02);
+}
+
+.icon {
+    margin-right: 10px;
+    color: #0d6efd;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #f8f9fa;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa;
+    transition: color 0.3s ease-in-out;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+.custom-card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #343a40;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    
+    
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.custom-card:hover {
+    background-color: #343a40;
+    transform: scale(1.05);
+}
+
+.book-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 190px; 
+    object-fit:scale-down;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.custom-card .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.custom-card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.custom-card .row {
+    margin: 0;
+}
+
+.custom-card p {
+    margin-bottom: 0.3rem;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.more{
+    color:green;
+}
+.less{
+    color:orange;
+}
+.tablee {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tablee th, 
+.tablee td {
+    border: 1px solid #333;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.tablee thead {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.tablee-striped tbody tr:nth-of-type(odd) {
+    background-color: #292929;
+}
+
+.tablee-striped tbody tr:nth-of-type(even) {
+    background-color: #1e1e1e;
+}
+
+.tablee tbody tr:hover {
+    background-color: #444;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-danger {
+    transition: all 0.3s ease-in-out;
+}
+.tablee td img {
+    width: 60px;  /* Set fixed width */
+    height: 60px; /* Set fixed height */
+    object-fit: cover; /* Ensures the image fills the square without distortion */
+    border-radius: 5px; /* Optional: Gives slightly rounded edges */
+    display: block; /* Ensures proper alignment */
+    margin: auto; /* Centers the image in the cell */
+}
