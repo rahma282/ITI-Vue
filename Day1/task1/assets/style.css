@@ -143,10 +143,10 @@ body {
     transition: all 0.3s ease-in-out;
 }
 .tablee td img {
-    width: 60px;  /* Set fixed width */
-    height: 60px; /* Set fixed height */
-    object-fit: cover; /* Ensures the image fills the square without distortion */
-    border-radius: 5px; /* Optional: Gives slightly rounded edges */
-    display: block; /* Ensures proper alignment */
-    margin: auto; /* Centers the image in the cell */
+    width: 60px;  
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
 }

@@ -32,9 +32,8 @@
             </div>
         </nav>
         <!-- list books -->
-         <div v-if="islist" class="mt-5">
-            <hr>
-        <h1 class="text-center mt-3">Book List</h1>
+         <div v-if="islist" class="mt-3">
+        <h1 class="text-center mt-1">Book List</h1>
         <hr>
         <ul class="list-group shadow" v-for="book in books" :key="book.id">
             <li class="list-group-item d-flex align-items-center" :title="book.author">
@@ -43,10 +42,11 @@
         </ul>
     </div>
     <!-- cart -->
-    <div class="container mt-4">
-        <!-- <h1 class="text-center mt-2 mb-1">Welcome to LitVerse</h1> -->
+    <div class="container mt-4" v-if="isCardVisable">
+        <h1 class="text-center mt-1">Welcome to LitVerse</h1>
+        <hr>
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-12 mb-4" v-for="book in books" :key="book.id" v-if="isCardVisable">
+            <div class="col-md-3 col-sm-6 col-12 mb-4" v-for="book in books" :key="book.id" >
                 <div class="card custom-card h-100">
                     <img :src="book.imageLink" :title="book.title" class="card-img-top book-image" alt="Book Image">
                     <div class="card-body d-flex flex-column">
@@ -65,6 +65,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <!--table-->
         <div class="d-flex flex-column align-items-center mt-1" v-if="isCart">
