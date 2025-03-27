@@ -1,0 +1,148 @@
+/* Global Dark Theme Styles */
+:root {
+  --primary-color: #1e1e2e;
+  --secondary-color: #2a2a3c;
+  --text-color: #ffffff;
+  --accent-color: #ff6b6b;
+  --border-radius: 10px;
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--secondary-color) !important;
+  padding: 10px;
+  box-shadow: var(--shadow);
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--accent-color);
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--accent-color);
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ff4c4c;
+}
+
+/* Table */
+.table {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.table th, .table td {
+  border-color: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+}
+
+.table thead {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+}
+
+.table tfoot {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+}
+
+/* Cart Badge */
+.cart-count {
+  background-color: var(--accent-color);
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+/* Not Found Page */
+.not-found-container {
+  background-color: var(--secondary-color);
+}
+
+/* Utilities */
+.text-danger {
+  color: var(--accent-color) !important;
+}
+
+/* Home Page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.home-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  color: #ccc;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.home-card {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.home-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.home-button:hover {
+  background-color: #ff4c4c;
+  transform: translateY(-2px);
+}

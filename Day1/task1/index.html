@@ -36,7 +36,7 @@
         <h1 class="text-center mt-1">Book List</h1>
         <hr>
         <ul class="list-group shadow" v-for="book in books" :key="book.id">
-            <li class="list-group-item d-flex align-items-center" :title="book.author">
+            <li class="list-group-item d-flex align-items-center my-1" :title="book.author">
                 <i class="ph ph-book-open icon"></i> {{ book.title }}
             </li>
         </ul>
